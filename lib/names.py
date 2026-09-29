@@ -1,4 +1,6 @@
 def names(participants):
-    if len(participants) > 0:
+    if len(participants) == 1:
         return participants[0]
+    elif len(participants) == 2:
+        return participants[0] + " & " + participants[1]
     return ""
