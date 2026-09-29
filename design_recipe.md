@@ -50,6 +50,10 @@ assert ["Bart"] => "Bart"
 assert ["Bart", "Lisa"] => "Bart & Lisa"
 
 # scenario 4
-# Three or more participants: commas between names, with an ampersand before the last one.
+# Three participants: name and then names with an ampersand before the last one.
 assert ["Bart", "Lisa", "Maggie"] => "Bart, Lisa & Maggie"
+
+# scenario 5
+# Four or more participants: commas between names, with an ampersand before the last one.
+assert ["Homer", "Bart", "Lisa", "Maggie"] => "Homer, Bart, Lisa & Maggie"
 ```
