@@ -15,3 +15,8 @@ def test_one_name_in_list_returns_name():
 # Two participants: joined with an ampersand.
 def test_two_names_in_list_returns_names_with_ampersand():
     assert names(["Bart", "Lisa"]) == "Bart & Lisa"
+
+# scenario 4
+# Three or more participants: commas between names, with an ampersand before the last one.
+def test_three_names_ampersand_between_last_two_names():
+    assert names(["Bart", "Lisa", "Maggie"]) == "Bart, Lisa & Maggie"
